@@ -3,11 +3,11 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [])
 .controller('myController', function($scope, $http) {
-	$scope.title ="chart App"
+	$scope.title ="high chart"
 
 	function readCSV() {
 		// http get request to read CSV file content
-		$http.get('/Sample1.csv').success($scope.processData);
+		$http.get('/Sample.csv').success($scope.processData);
 	};
 
 	$scope.processData = function(allText) {
